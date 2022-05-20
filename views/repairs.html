@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Repairs</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Repairs</h1>
+
+[ <a href="index.html">Home</a> | <a href="employees.html">Employees</a> | <a href="customers.html">Customers</a> | <a href="appliances.html">Appliances</a> | <a href="parts.html">Parts</a> | <a href="sales.html">Sales</a> | Repairs | <a href="employeesRepairs.html">Employees Repairs</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Repairs</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>repairID</th>
+    <th>date</th>
+    <th>cost</th>
+    <th>partsPartID</th>
+	<th>customersCustomerID</th>
+    <th>appliancesApplianceID</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">1</td>
+    <td>2022-04-19</td>
+    <td align = "right">42.06</td>
+    <td align = "right">1</td>
+    <td align = "right">4</td>
+    <td align = "right">1</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">2</td>
+    <td>2022-04-08</td>
+    <td align = "right">111.23</td>
+    <td align = "right">4</td>
+    <td align = "right">1</td>
+    <td align = "right">3</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">3</td>
+    <td>2022-04-05</td>
+    <td align = "right">89.00</td>
+    <td align = "right"></td>
+    <td align = "right">4</td>
+    <td align = "right">1</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div>
+<div id="select" style="display: block">
+  <form id="selectRepair">
+      <legend><strong>Search for Repair</strong></legend>
+        <fieldset class="fields">
+          <label> Date </label> <input type="text" name="date">
+          <label> Cost </label> <input type="text" name="cost">
+          <label> Customer ID </label> <input type="text" name="customersCustomerID">
+          <label> Appliance ID </label> <input type="text" name="appliancesApplianceID">
+        </fieldset>
+        <input class="btn" type="submit" id="selectRepair" value="Search for Repair">
+</form> 
+</div>
+<div id="insert" style="display: block">
+    <form id="addRepair">
+        <legend><strong>Add Repair</strong></legend>
+          <fieldset class="fields">
+            <label> Date </label> <input type="text" name="date">
+            <label> Cost </label> <input type="text" name="cost">
+            <label> Part ID </label> <input type="text" name="partID">
+			<label> Customer ID </label> <input type="text" name="customerID">
+            <label> Appliance ID </label> <input type="text" name="applianceID">
+          </fieldset>
+          <input class="btn" type="submit" id="addRepair" value="Add a Repair">
+	</form> 
+</div>
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateRepair">
+      <legend><strong>Update Repair</strong></legend>
+          <fieldset class="fields">
+            <label>ID:</label> 1
+            <label> Date </label> <input type="text" name="date" value = "2022-04-19">
+            <label> Cost </label> <input type="text" name="cost" value = "42.06">
+            <label> Part ID </label> <input type="text" name="partID" value="1">
+			<label> Customer ID </label> <input type="text" name="customerID" value = "4">
+            <label> Appliance ID </label> <input type="text" name="applianceID" value = "1">
+    </fieldset>
+    <input class="btn" type="submit" id="updateRepair" value="Update Repair">
+  </form> 
+</div>
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteRepair">
+      <legend><strong>Delete Repair</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+            <label> Date </label> 2022-04-19
+            
+    </fieldset>
+    <input class="btn" type="submit" id="deleteRepair" value="Delete Repair">
+  </form> 
+</div>
+</body>
+</html>

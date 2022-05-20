@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Sales</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Sales</h1>
+
+[ <a href="index.html">Home</a> | <a href="employees.html">Employees</a> | <a href="customers.html">Customers</a> | <a href="appliances.html">Appliances</a> | <a href="parts.html">Parts</a> | Sales | <a href="repairs.html">Repairs</a> | <a href="employeesRepairs.html">Employees Repairs</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Sales</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>salesID</th>
+    <th>date</th>
+    <th>cost</th>
+    <th>customersCustomerID</th>
+    <th>partsPartID</th>
+    <th>appliancesApplianceID</th>
+    <th>employeesEmployeeID</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">1</td>
+    <td>2022-04-01</td>
+    <td align = "right">1099.00</td>
+    <td align = "right">3</td>
+    <td align = "right"></td>
+    <td align = "right">2</td>
+    <td align = "right">2</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">2</td>
+    <td>2022-04-02</td>
+    <td align = "right">3055.99</td>
+    <td align = "right">4</td>
+    <td align = "right"></td>
+    <td align = "right">1</td>
+    <td align = "right">3</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">3</td>
+    <td>2022-04-21</td>
+    <td align = "right">35.00</td>
+    <td align = "right">2</td>
+    <td align = "right">1</td>
+    <td align = "right"></td>
+    <td align = "right">1</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div>
+<div id="select" style="display: block">
+  <form id="selectSale">
+      <legend><strong>Search for Sale</strong></legend>
+        <fieldset class="fields">
+          <label> Date </label> <input type="text" name="date">
+          <label> Cost </label> <input type="text" name="cost">
+          <label> Customer ID </label> <input type="text" name="customersCustomerID">
+          <label> Employee ID </label> <input type="text" name="employeesEmployeeID">
+        </fieldset>
+        <input class="btn" type="submit" id="selectSale" value="Search for Sale">
+</form> 
+</div>
+<div id="insert" style="display: block">
+    <form id="addRepair">
+        <legend><strong>Add Sale</strong></legend>
+          <fieldset class="fields">
+            <label> Date </label> <input type="text" name="date">
+            <label> Cost </label> <input type="text" name="cost">
+            <label> Customer ID </label> <input type="text" name="customerID">
+            <label> Part ID </label> <input type="text" name="partID">
+            <label> Appliance ID </label> <input type="text" name="applianceID">
+            <label> Employee ID </label> <input type="text" name="employeeID">
+          </fieldset>
+          <input class="btn" type="submit" id="addSale" value="Add a Sale">
+	</form> 
+</div>
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateSale">
+      <legend><strong>Update Sale</strong></legend>
+          <fieldset class="fields">
+            <label>ID:</label> 1
+            <label> Date </label> <input type="text" name="date" value = "2022-04-01">
+            <label> Cost </label> <input type="text" name="cost" value = "1099.00">
+            <label> Customer ID </label> <input type="text" name="customerID" value = "3">
+            <label> Part ID </label> <input type="text" name="partID">
+            <label> Appliance ID </label> <input type="text" name="applianceID" value = "2">
+            <label> Employee ID </label> <input type="text" name="employeeID" value = "2">
+    </fieldset>
+    <input class="btn" type="submit" id="updateSale" value="Update Sale">
+  </form> 
+</div>
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteSale">
+      <legend><strong>Delete Sale</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+            <label> Date </label> 2022-04-01
+            
+    </fieldset>
+    <input class="btn" type="submit" id="deleteSale" value="Delete Sale">
+  </form> 
+</div>
+</body>
+</html>

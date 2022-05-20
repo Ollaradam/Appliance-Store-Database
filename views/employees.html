@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Employees</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Employees</h1>
+
+[ <a href="index.html">Home</a> | Employees | <a href="customers.html">Customers</a> | <a href="appliances.html">Appliances</a> | <a href="parts.html">Parts</a> | <a href="sales.html">Sales</a> | <a href="repairs.html">Repairs</a> | <a href="employeesRepairs.html">Employees Repairs</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Employees</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>employeeID</th>
+    <th>name</th>
+    <th>employeeType</th>
+    <th>phone</th>
+    <th>hourly</th>
+    <th>hoursWorked</th>
+    <th>doesRefrigerant</th>
+    <th>totalRepaired</th>
+    <th>totalSold</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">1</td>
+    <td >Carl Orlonski</td>
+    <td>Repair</td>
+    <td>3195555555</td>
+    <td align = "right">20.00</td>
+    <td align = "right">25</td>
+    <td align = "right">1</td>
+    <td align = "right">0.00</td>
+    <td align = "right">0.00</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">2</td>
+    <td >Patricia Orlonski</td>
+    <td>Sales</td>
+    <td>6195555555</td>
+    <td align = "right">20.00</td>
+    <td align = "right">15</td>
+    <td align = "right">0</td>
+    <td align = "right">0.00</td>
+    <td align = "right">0.00</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">3</td>
+    <td >Sam Jackson</td>
+    <td>Repair</td>
+    <td>7135555555</td>
+    <td align = "right">18.00</td>
+    <td align = "right">30</td>
+    <td align = "right">0</td>
+    <td align = "right">0.00</td>
+    <td align = "right">0.00</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">4</td>
+    <td >Shelly Johnson</td>
+    <td>Sales</td>
+    <td>3135555555</td>
+    <td align = "right">15.00</td>
+    <td align = "right">21</td>
+    <td align = "right">0</td>
+    <td align = "right">0.00</td>
+    <td align = "right">0.00</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div>
+<div id="select" style="display: block">
+  <form id="selectEmployee">
+      <legend><strong>Search for Employee</strong></legend>
+        <fieldset class="fields">
+          <label> Name </label> <input type="text" name="name">
+          <label> Employee Type </label> <input type="text" name="employeeType">
+          <label> Phone </label> <input type="text" name="phone">
+          <label> Hourly </label> <input type="text" name="hourly">
+          <label> Hours Worked </label> <input type="text" name="hoursWorked">
+          <label> Does Refrigerant </label> <input type="text" name="doesRefrigerant">
+          <label> Total Repaired </label> <input type="text" name="totalRepaired">
+          <label> Total Sold </label> <input type="text" name="totalSold">
+        </fieldset>
+        <input class="btn" type="submit" id="selectEmployee" value="Search for Employee">
+</form> 
+</div>
+<p>&nbsp;</p>
+<div id="insert" style="display: block">
+    <form id="addEmployee">
+        <legend><strong>Add Employee</strong></legend>
+          <fieldset class="fields">
+            <label> Name </label> <input type="text" name="name">
+            <label> Employee Type </label> <input type="text" name="employeeType">
+            <label> Phone </label> <input type="text" name="phone">
+            <label> Hourly </label> <input type="text" name="hourly">
+            <label> Hours Worked </label> <input type="text" name="hoursWorked">
+            <label> Does Refrigerant </label> <input type="text" name="doesRefrigerant">
+            <label> Total Repaired </label> <input type="text" name="totalRepaired">
+            <label> Total Sold </label> <input type="text" name="totalSold">
+          </fieldset>
+          <input class="btn" type="submit" id="addEmployee" value="Add an Employee">
+	</form> 
+</div>
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateEmployee">
+      <legend><strong>Update Employee</strong></legend>
+          <fieldset class="fields">
+            <label>ID:</label> 1
+            <label> Name </label> <input type="text" name="name" value = "Carl Orlonski">
+            <label> Employee Type </label> <input type="text" name="employeeType" value = "Repair">
+            <label> Phone </label> <input type="text" name="phone" value = "3195555555">
+            <label> Hourly </label> <input type="text" name="hourly" value = "20.00">
+            <label> Hours Worked </label> <input type="text" name="hoursWorked" value = "25">
+            <label> Does Refrigerant </label> <input type="text" name="doesRefrigerant" value = "1">
+            <label> Total Repaired </label> <input type="text" name="totalRepaired" value = "0.00">
+            <label> Total Sold </label> <input type="text" name="totalSold" value = "0.00">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateEmployee" value="Update Employee">
+  </form> 
+</div>
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteEmployee">
+      <legend><strong>Delete Employee</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+            <label> Name </label> Carl Orlonski
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteEmployee" value="Delete Employee">
+  </form> 
+</div>
+</body>
+</html>

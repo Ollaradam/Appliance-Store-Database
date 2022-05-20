@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Parts</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Parts</h1>
+
+[ <a href="index.html">Home</a> | <a href="employees.html">Employees</a> | <a href="customers.html">Customers</a> | <a href="appliances.html">Appliances</a> | Parts | <a href="sales.html">Sales</a> | <a href="repairs.html">Repairs</a> | <a href="employeesRepairs.html">Employees Repairs</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Parts</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>partID</th>
+    <th>partNum</th>
+    <th>cost</th>
+    <th>partName</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">1</td>
+    <td>WPW1033</td>
+    <td align = "right">19.95</td>
+    <td>Drain Pump</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">2</td>
+    <td>WPW6832</td>
+    <td align = "right">103.50</td>
+    <td>Control Board</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">3</td>
+    <td>WPW38427</td>
+    <td align = "right">25.00</td>
+    <td>Thermostat</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">4</td>
+    <td>GE33992</td>
+    <td align = "right">34.99</td>
+    <td>Timer</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div>
+<div id="select" style="display: block">
+  <form id="selectPart">
+      <legend><strong>Search for Part</strong></legend>
+        <fieldset class="fields">
+          <label> Part Number </label> <input type="text" name="partNum">
+          <label> Cost </label> <input type="text" name="cost">
+          <label> Part Name </label> <input type="text" name="partName">
+        </fieldset>
+        <input class="btn" type="submit" id="selectPart" value="Search for Part">
+</form> 
+</div>
+<p>&nbsp;</p>
+<div id="insert" style="display: block">
+    <form id="addPart">
+        <legend><strong>Add Part</strong></legend>
+          <fieldset class="fields">
+            <label> Part Number </label> <input type="text" name="partNum">
+            <label> Cost </label> <input type="text" name="cost">
+            <label> Part Name </label> <input type="text" name="partName">
+          </fieldset>
+          <input class="btn" type="submit" id="addPart" value="Add a Part">
+	</form> 
+</div>
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updatePart">
+      <legend><strong>Update Part</strong></legend>
+          <fieldset class="fields">
+            <label>ID:</label> 1
+            <label> Part Number </label> <input type="text" name="partNum" value = "WPW1033">
+            <label> Cost </label> <input type="text" name="cost" value = "19.95">
+            <label> Part Name </label> <input type="text" name="partName" value = "Drain Pump">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdatePart" value="Update Part">
+  </form> 
+</div>
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deletePart">
+      <legend><strong>Delete Part</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+            <label> Part Number </label> WPW1033
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeletePart" value="Delete Part">
+  </form> 
+</div>
+</body>
+</html>

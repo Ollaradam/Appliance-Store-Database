@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Customers</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Customers</h1>
+
+[ <a href="index.html">Home</a> | <a href="employees.html">Employees</a> | Customers | <a href="appliances.html">Appliances</a> | <a href="parts.html">Parts</a> | <a href="sales.html">Sales</a> | <a href="repairs.html">Repairs</a> | <a href="employeesRepairs.html">Employees Repairs</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Customers</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>customerID</th>
+    <th>name</th>
+    <th>phone</th>
+    <th>totalBought</th>
+    <th>totalRepaired</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">1</td>
+    <td >John Denver</td>
+    <td>6185555555</td>
+    <td align = "right">0.00</td>
+    <td align = "right">0.00</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">2</td>
+    <td >David Wallace</td>
+    <td>5035555555</td>
+    <td align = "right">0.00</td>
+    <td align = "right">0.00</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">3</td>
+    <td >Hillary Clinton</td>
+    <td>2025555555</td>
+    <td align = "right">0.00</td>
+    <td align = "right">0.00</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">4</td>
+    <td >Eddie George</td>
+    <td>6155555555</td>
+    <td align = "right">0.00</td>
+    <td align = "right">0.00</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div>
+<div id="select" style="display: block">
+  <form id="selectCustomer">
+      <legend><strong>Search for Customer</strong></legend>
+        <fieldset class="fields">
+          <label> Name </label> <input type="text" name="name">
+          <label> Phone </label> <input type="text" name="phone">
+          <label> Total Bought </label> <input type="text" name="totalBought">
+          <label> Total Repaired </label> <input type="text" name="totalRepaired">
+        </fieldset>
+        <input class="btn" type="submit" id="selectCustomer" value="Search for Customer">
+</form> 
+</div>
+<p>&nbsp;</p>
+<div id="insert" style="display: block">
+    <form id="addCustomer">
+        <legend><strong>Add Customer</strong></legend>
+          <fieldset class="fields">
+            <label> Name </label> <input type="text" name="name">
+            <label> Phone </label> <input type="text" name="phone">
+            <label> Total Bought </label> <input type="text" name="totalBought">
+            <label> Total Repaired </label> <input type="text" name="totalRepaired">
+          </fieldset>
+          <input class="btn" type="submit" id="addCustomer" value="Add a Customer">
+	</form> 
+</div>
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateCustomer">
+      <legend><strong>Update Customer</strong></legend>
+          <fieldset class="fields">
+            <label>ID:</label> 1
+            <label> Name </label> <input type="text" name="name" value = "John Denver">
+            <label> Phone </label> <input type="text" name="phone" value = "6185555555">
+            <label> Total Bought </label> <input type="text" name="totalBought" value = "0.00">
+            <label> Total Repaired </label> <input type="text" name="totalRepaired" value = "0.00">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateCustomer" value="Update Customer">
+  </form> 
+</div>
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteCustomer">
+      <legend><strong>Delete Customer</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+            <label> Name </label> John Denver
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteCustomer" value="Delete Customer">
+  </form> 
+</div>
+</body>
+</html>

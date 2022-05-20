@@ -1,0 +1,116 @@
+
+<title>Appliances</title>
+<!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<h1>Appliances</h1>
+
+[ <a href="/">Home</a> | <a href="employees.html">Employees</a> | <a href="customers.html">Customers</a> | Appliances | <a href="parts.html">Parts</a> | <a href="sales.html">Sales</a> | <a href="repairs.html">Repairs</a> | <a href="employeesRepairs.html">Employees Repairs</a> ]
+<div id="browse" style="display: block">
+
+<table border="1" cellpadding="5" id="appliance-table">
+
+    {{!-- Header section --}}
+    <thead>
+
+        {{!-- For just the first row, we print each key of the row object as a header cell so we
+        know what each column means when the page renders --}}
+        <tr>
+            {{#each data.[0]}}
+            <th>
+                {{@key}}
+            </th>
+            {{/each}}
+            <th>delete</th>
+        </tr>
+    </thead>
+
+    {{!-- Body section --}}
+    <tbody>
+
+        {{!-- For each row, print the id, fname, lname, homeworld and age, in order --}}
+        {{#each data}}
+        <tr>
+            <td>{{this.applianceID}}</td>
+            <td>{{this.brand}}</td>
+            <td>{{this.type}}</td>
+            <td>{{this.modelNum}}</td>
+            <td>{{this.serialNum}}</td>
+            <td><button onClick="deleteAppliance({{this.applianceID}})">Delete</button></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<script src="./js/delete_appliance.js"></script>
+
+</div>
+
+<p>&nbsp;</p>
+
+<div>
+<h2>Add an Appliance</h2>
+<p>Enter the information of the appliance and click Submit</p>
+<form id="add-appliance-form" method="POST" action="/add-appliance-form">
+  <label for="input-brand">Appliance Brand: </label>
+  <input type="text" name="input-brand" id="input-brand">
+
+  <label for="input-type">Appliance Type: </label>
+  <input type="text" name="input-type" id="input-type">
+
+  <label for="input-modelNum">Appliance Model Number: </label>
+  <input type="text" name="input-modelNum" id="input-modelNum">
+
+  <label for="input-serialNum">Appliance Serial Number: </label>
+  <input type="text" name="input-serialNum" id="input-serialNum">
+
+  <input type="submit">
+</form>
+
+</div>
+
+
+<p>&nbsp;</p>
+
+<div id="select" style="display: block">
+  <form id="selectAppliance">
+      <legend><strong>Search for Appliance</strong></legend>
+        <fieldset class="fields">
+          <label> Type </label> <input type="text" name="type">
+          <label> Brand </label> <input type="text" name="brand">
+          <label> Model Number </label> <input type="text" name="modelNum">
+          <label> Serial Number </label> <input type="text" name="serialNum">
+        </fieldset>
+        <input class="btn" type="submit" id="selectAppliance" value="Search for Appliance">
+</form> 
+</div>
+
+<p>&nbsp;</p>
+
+<div id="update" style="display: block">
+  <form id="updateAppliance">
+      <legend><strong>Update Appliance</strong></legend>
+          <fieldset class="fields">
+            <label>ID:</label> 1
+            <label> Type </label> <input type="text" name="type" value = "Fridge">
+            <label> Brand </label> <input type="text" name="brand" value = "Whirlpool">
+            <label> Model Number </label> <input type="text" name="modelNum" value = "WRX735SDHZ">
+			      <label> Serial Number </label> <input type="text" name="serialNum" value = "SE38427">
+          </fieldset>
+    <input class="btn" type="submit" id="updateAppliance" value="Update Appliance">
+  </form> 
+</div>
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteAppliance">
+      <legend><strong>Delete Appliance</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+            <label> Serial Number </label> SE38427
+            
+    </fieldset>
+    <input class="btn" type="submit" id="deleteAppliance" value="Delete Appliance">
+  </form> 
+</div>
+

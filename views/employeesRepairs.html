@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Employees Repairs</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Employees Repairs</h1>
+
+[ <a href="index.html">Home</a> | <a href="employees.html">Employees</a> | <a href="customers.html">Customers</a> | <a href="appliances.html">Appliances</a> | <a href="parts.html">Parts</a> | <a href="sales.html">Sales</a> | <a href="repairs.html">Repairs</a> | Employees Repairs ]
+<div id="browse" style="display: block">
+<p><strong>Browse Employees Repairs</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th>employeesEmployeeID</th>
+    <th>repairsRepairID</th>
+  </tr>
+  <tr>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">1</td>
+    <td align = "right">2</td>
+  </tr>
+  <tr>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">1</td>
+    <td align = "right">3</td>
+  </tr>
+  <tr>
+    <td><a href="#">Delete</a></td>
+    <td align = "right">3</td>
+	<td align = "right">1</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div>
+<div id="insert" style="display: block">
+    <form id="addEmployeesRepair">
+        <legend><strong>Add an Employee's Repair</strong></legend>
+          <fieldset class="fields">
+            <label> employeesEmployeeID </label> <input type="text" name="employeeIDFK">
+            <label> repairsRepairID </label> <input type="text" name="repairIDFK">
+          </fieldset>
+          <input class="btn" type="submit" id="addEmployeesRepair" value="Add an employee's repair">
+	</form> 
+</div>
+
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteEmployeesRepair">
+      <legend><strong>Delete Employee Repair</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to remove the following association?</p>
+          <label>Employee ID:</label> 1
+            <label> Repair ID:</label> 2
+            
+    </fieldset>
+    <input class="btn" type="submit" id="deleteEmployeesRepair" value="Remove">
+  </form> 
+</div>
+</body>
+</html>
